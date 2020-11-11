@@ -16,7 +16,7 @@ public class BiomeMegalakeGrove extends EndBiome {
 				.setWaterColor(96, 163, 255)
 				.setWaterFogColor(96, 163, 255)
 				.setFogDensity(2.0F)
-				.setParticles(EndParticles.GLOWING_SPHERE, 0.001F)
+				//.setParticles(EndParticles.GLOWING_SPHERE, 0.001F)
 				.setMusic(EndSounds.MUSIC_MEGALAKE)
 				.setLoop(EndSounds.AMBIENT_MEGALAKE_GROVE)
 				.setSurface(EndBlocks.END_MOSS)

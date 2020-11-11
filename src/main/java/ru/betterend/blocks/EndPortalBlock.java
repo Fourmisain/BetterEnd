@@ -30,7 +30,7 @@ public class EndPortalBlock extends NetherPortalBlock implements IRenderTypeable
 			return 12;
 		}));
 	}
-	
+/*
 	@Override
 	@Environment(EnvType.CLIENT)
 	public void randomDisplayTick(BlockState state, World world, BlockPos pos, Random random) {
@@ -50,15 +50,15 @@ public class EndPortalBlock extends NetherPortalBlock implements IRenderTypeable
 
 		world.addParticle(EndParticles.PORTAL_SPHERE, x, y, z, 0, 0, 0);
 	}
-
+*/
 	@Override
 	public void randomTick(BlockState state, ServerWorld world, BlockPos pos, Random random) {}
-	
+
 	@Override
 	public BlockState getStateForNeighborUpdate(BlockState state, Direction direction, BlockState newState, WorldAccess world, BlockPos pos, BlockPos posFrom) {
 		return state;
 	}
-	
+
 	@Override
 	public void onEntityCollision(BlockState state, World world, BlockPos pos, Entity entity) {
 		if (world instanceof ServerWorld && !entity.hasVehicle() && !entity.hasPassengers() && entity.canUsePortals()) {
@@ -79,12 +79,12 @@ public class EndPortalBlock extends NetherPortalBlock implements IRenderTypeable
 			}
 		}
 	}
-	
+
 	@Override
 	public ERenderLayer getRenderLayer() {
 		return ERenderLayer.TRANSLUCENT;
 	}
-	
+
 	private BlockPos findExitPos(ServerWorld world, BlockPos pos, Entity entity) {
 		Registry<DimensionType> registry = world.getRegistryManager().getDimensionTypes();
 		double mult = registry.get(DimensionType.THE_END_ID).getCoordinateScale();

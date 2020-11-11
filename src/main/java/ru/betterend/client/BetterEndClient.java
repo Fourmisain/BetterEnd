@@ -19,9 +19,9 @@ public class BetterEndClient implements ClientModInitializer {
 		registerRenderLayers();
 		EndBlockEntityRenders.register();
 		EndScreens.register();
-		EndParticles.register();
+		//EndParticles.register();
 		EndEntitiesRenders.register();
-		
+
 		if (BetterEnd.isDevEnvironment()) {
 			TranslationHelper.printMissingNames();
 		}

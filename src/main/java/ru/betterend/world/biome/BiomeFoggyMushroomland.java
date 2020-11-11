@@ -18,7 +18,7 @@ public class BiomeFoggyMushroomland extends EndBiome {
 				.setWaterColor(119, 227, 250)
 				.setWaterFogColor(119, 227, 250)
 				.setSurface(EndBlocks.END_MOSS, EndBlocks.END_MYCELIUM)
-				.setParticles(EndParticles.GLOWING_SPHERE, 0.001F)
+				//.setParticles(EndParticles.GLOWING_SPHERE, 0.001F)
 				.setLoop(EndSounds.AMBIENT_FOGGY_MUSHROOMLAND)
 				.setMusic(EndSounds.MUSIC_FOGGY_MUSHROOMLAND)
 				.addStructureFeature(EndStructures.GIANT_MOSSY_GLOWSHROOM)
